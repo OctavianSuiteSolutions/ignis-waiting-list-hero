@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 
 const Navbar = () => {
   return (
-    <header className="fixed w-full bg-secondary/90 backdrop-blur-md z-50 shadow-md">
+    <header className="fixed w-full bg-white/90 backdrop-blur-md z-50 shadow-sm">
       <nav className="container mx-auto py-4 flex justify-between items-center">
         <div className="flex items-center">
           <a href="#" className="flex items-center space-x-2">

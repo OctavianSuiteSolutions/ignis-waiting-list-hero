@@ -4,19 +4,19 @@ import { cn } from '@/lib/utils';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-gradient-to-br from-secondary to-secondary/95">
+    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-white">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-secondary/70"></div>
-        <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-secondary to-transparent"></div>
+        <div className="absolute inset-0 bg-white/70"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-white to-transparent"></div>
       </div>
       
       <div className="container mx-auto relative z-10">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="fade-in order-2 md:order-1">
-            <h1 className="text-white mb-4 leading-tight">
+            <h1 className="text-secondary mb-4 leading-tight">
               Formamos <span className="text-ignis-red">héroes cotidianos</span>, no sólo funcionarios
             </h1>
-            <p className="text-white/90 text-xl mb-8 max-w-lg">
+            <p className="text-secondary/90 text-xl mb-8 max-w-lg">
               IGNIS Formación es la academia premium que transforma tu preparación 
               para oposiciones de bomberos en la Comunidad Valenciana.
             </p>
@@ -29,7 +29,7 @@ const Hero = () => {
               </a>
               <a 
                 href="#features" 
-                className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-6 py-3 rounded-md font-semibold transition-all duration-300 text-center border border-white/20"
+                className="bg-gray-100 hover:bg-gray-200 text-secondary px-6 py-3 rounded-md font-semibold transition-all duration-300 text-center border border-gray-200"
               >
                 Descubre más
               </a>
@@ -52,7 +52,7 @@ const Hero = () => {
       <div className="absolute bottom-10 left-0 right-0 flex justify-center">
         <a 
           href="#features" 
-          className="text-white/50 hover:text-white transition-colors duration-300"
+          className="text-secondary/50 hover:text-secondary transition-colors duration-300"
           aria-label="Scroll down"
         >
           <svg 

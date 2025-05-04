@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
@@ -87,7 +86,7 @@ const Index = () => {
       </section>
       
       {/* Sección Plataforma */}
-      <section className="section-padding">
+      <section className="section-padding bg-white">
         <div className="container mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="mb-4 text-secondary">Una Plataforma Completa</h2>
