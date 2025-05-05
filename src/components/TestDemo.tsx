@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Lottie from "lottie-react";
 import { Button } from "@/components/ui/button";
+import animationData from '/public/Animation - 1746464286628.json';
 
 interface Option {
   id: number;
@@ -12,16 +13,7 @@ interface Option {
 const TestDemo = () => {
   const [step, setStep] = useState<'intro' | 'question' | 'result'>('intro');
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
-  const [animationData, setAnimationData] = useState(null);
   
-  useEffect(() => {
-    // Cargar el archivo JSON de la animación desde su URL pública
-    fetch('/Animation - 1746464286628.json')
-      .then(response => response.json())
-      .then(data => setAnimationData(data))
-      .catch(error => console.error('Error cargando la animación:', error));
-  }, []);
-
   const options: Option[] = [
     { id: 1, text: "Estudiando por mi cuenta con libros", isCorrect: false },
     { id: 2, text: "Asistiendo a una academia tradicional", isCorrect: false },
@@ -208,11 +200,9 @@ const TestDemo = () => {
                   {options.find(o => o.id === selectedOption)?.isCorrect ? (
                     <div className="relative pt-20 mt-20">
                       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-full -mt-2 z-20">
-                        {animationData && (
-                          <div className="w-48 h-48">
-                            <Lottie animationData={animationData} loop={true} />
-                          </div>
-                        )}
+                        <div className="w-48 h-48">
+                          <Lottie animationData={animationData} loop={true} />
+                        </div>
                       </div>
                       <h3 className="text-2xl font-bold text-green-600 mb-2">¡Respuesta Correcta!</h3>
                       <p className="text-gray-600 mb-6">
@@ -290,4 +280,4 @@ const TestDemo = () => {
   );
 };
 
-export default TestDemo; 
+export default TestDemo;

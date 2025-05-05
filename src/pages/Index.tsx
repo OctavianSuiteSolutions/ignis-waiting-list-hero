@@ -10,6 +10,7 @@ import { cn } from '@/lib/utils';
 import Lottie from "lottie-react";
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import animationData from '/public/Animation - 1746464286628.json';
 
 // Componente de tarjeta para la sección de plataforma
 const PlatformFeature = ({ icon, title, description, delay = 0 }) => {
@@ -47,16 +48,9 @@ const PlatformFeature = ({ icon, title, description, delay = 0 }) => {
 };
 
 const Index = () => {
-  const [animationData, setAnimationData] = useState(null);
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    // Cargar el archivo JSON de la animación desde su URL pública
-    fetch('/Animation - 1746464286628.json')
-      .then(response => response.json())
-      .then(data => setAnimationData(data))
-      .catch(error => console.error('Error cargando la animación:', error));
-      
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
@@ -80,7 +74,7 @@ const Index = () => {
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
       <circle cx="9" cy="7" r="4" />
-      <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+      <path d="M22 21v-2a4 4 0 0 1 0 7.75" />
       <path d="M16 3.13a4 4 0 0 1 0 7.75" />
     </svg>
   );
@@ -487,7 +481,7 @@ const Index = () => {
       {/* Separador con onda */}
       <div className="h-24 bg-secondary relative">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="absolute bottom-0 left-0 w-full">
-          <path fill="#AB2328" fillOpacity="0.8" d="M0,288L48,272C96,256,192,224,288,213.3C384,203,480,213,576,229.3C672,245,768,267,864,261.3C960,256,1056,224,1152,218.7C1248,213,1344,235,1392,245.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+          <path fill="#AB2328" fillOpacity="0.8" d="M0,256L48,240C96,224,192,192,288,192C384,192,480,224,576,240C672,256,768,256,864,256C960,256,1056,224,1152,218.7C1248,213,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
         </svg>
       </div>
       
@@ -518,11 +512,9 @@ const Index = () => {
           >
             <div className="inline-block bg-white/10 text-white px-4 py-1 rounded-full text-sm font-semibold mb-5 backdrop-blur-sm relative">
               {/* Animación de fuego encima del texto "No te lo pierdas" */}
-              {animationData && (
-                <div className="absolute -top-20 left-1/2 transform -translate-x-1/2 w-28 h-28 md:w-36 md:h-36 z-20">
-                  <Lottie animationData={animationData} loop={true} />
-                </div>
-              )}
+              <div className="absolute -top-20 left-1/2 transform -translate-x-1/2 w-28 h-28 md:w-36 md:h-36 z-20">
+                <Lottie animationData={animationData} loop={true} />
+              </div>
               No te lo pierdas
             </div>
             <h2 className="mb-6 text-white font-bold text-4xl md:text-5xl">
