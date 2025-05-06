@@ -401,7 +401,10 @@ const Index = () => {
       </div>
       
       {/* Sección Call to Action */}
-      <section id="waitlist" className="section-padding pt-32 bg-gradient-to-br from-ignis-red via-secondary to-secondary relative overflow-hidden">
+      <section 
+        id="waitlist" 
+        className="section-padding pt-8 bg-gradient-to-br from-ignis-red via-secondary to-secondary relative overflow-hidden"
+      >
         {/* Elementos decorativos */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-[url('/lovable-uploads/c172593a-c84f-43d9-be5d-cc49b69e0015.png')] bg-center bg-no-repeat bg-contain opacity-5"></div>
@@ -413,19 +416,23 @@ const Index = () => {
           <div className="absolute bottom-60 left-40 w-12 h-12 bg-white/10 rounded-full blur-lg animate-pulse-slow"></div>
         </div>
         
-        <div className="container mx-auto relative z-10">
-          <motion.div className="text-center max-w-3xl mx-auto mb-10 relative" initial="hidden" whileInView="visible" viewport={{
-          once: true,
-          amount: 0.3
-        }} variants={fadeInUpVariants} custom={0}>
+        <div className="container mx-auto relative z-10 mt-16">
+          <motion.div 
+            className="text-center max-w-3xl mx-auto mb-16 relative mt-40"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeInUpVariants}
+            custom={0}
+          >
             <div className="inline-block bg-white/10 text-white px-4 py-1 rounded-full text-sm font-semibold mb-5 backdrop-blur-sm relative">
               {/* Animación de fuego encima del texto "No te lo pierdas" */}
-              <div className="absolute -top-20 left-1/2 transform -translate-x-1/2 w-28 h-28 md:w-36 md:h-36 z-20">
+              <div className="absolute -top-52 left-1/2 transform -translate-x-1/2 w-32 h-32 md:w-40 md:h-40 z-20">
                 <Lottie animationData={animationData} loop={true} />
               </div>
               No te lo pierdas
             </div>
-            <h2 className="mb-6 text-white font-bold text-4xl md:text-5xl">
+            <h2 className="mb-8 text-white font-bold text-4xl md:text-5xl">
               Forma parte de <span className="text-ignis-gold">IGNIS</span>
             </h2>
             <p className="text-white/90 text-lg mb-8">
