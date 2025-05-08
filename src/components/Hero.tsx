@@ -126,8 +126,8 @@ const Hero = () => {
             </div>
             
             <h1 className="text-white mb-6 leading-tight font-extrabold">
-              Formamos <span className="text-transparent bg-clip-text bg-gradient-to-r from-ignis-red to-ignis-gold">héroes cotidianos</span>, 
-              <br/>no sólo funcionarios
+              Ignis Formación, <span className="text-transparent bg-clip-text bg-gradient-to-r from-ignis-red to-ignis-gold">formando Héroes</span> 
+              <br/>que salvan vidas
             </h1>
             
             <p className="text-white/80 text-xl mb-8 max-w-lg">
