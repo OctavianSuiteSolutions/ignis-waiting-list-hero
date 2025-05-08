@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
@@ -219,46 +218,6 @@ const Hero = () => {
                   <span className="text-xs mt-1 font-medium">PREVENTA</span>
                 </div>
               </div>
-              
-              {/* Elementos de decoración flotantes */}
-              <motion.div 
-                className="absolute -top-6 -right-6 bg-white p-3 rounded-lg shadow-lg transform rotate-6"
-                animate={{
-                  y: [0, -10, 0],
-                  rotate: [6, 12, 6]
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  repeatType: "reverse"
-                }}
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#AB2328" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                </svg>
-              </motion.div>
-              
-              <motion.div 
-                className="absolute -bottom-4 -left-4 bg-white p-3 rounded-lg shadow-lg transform -rotate-6"
-                animate={{
-                  y: [0, 10, 0],
-                  rotate: [-6, -12, -6]
-                }}
-                transition={{
-                  duration: 5,
-                  delay: 0.5,
-                  repeat: Infinity,
-                  repeatType: "reverse"
-                }}
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D83C46" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M14.5 18.5a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"></path>
-                  <path d="M7.5 10.5a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"></path>
-                  <path d="M5.5 18.5a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"></path>
-                  <path d="M7.5 14.5V13a2 2 0 0 1 2-2"></path>
-                  <path d="M11.5 10.5V9a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v7"></path>
-                </svg>
-              </motion.div>
             </div>
           </motion.div>
         </div>
