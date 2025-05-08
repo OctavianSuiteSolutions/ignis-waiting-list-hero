@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
@@ -125,8 +126,9 @@ const Hero = () => {
             </div>
             
             <h1 className="text-white mb-6 leading-tight font-extrabold">
-              Ignis Formación, <span className="text-transparent bg-clip-text bg-gradient-to-r from-ignis-red to-ignis-gold">formando Héroes</span> 
-              <br/>que salvan vidas
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-ignis-red to-ignis-gold">IGNIS FORMACIÓN</span> 
+              <br/>Formando Héroes
+              <br/>Salvando Vidas
             </h1>
             
             <p className="text-white/80 text-xl mb-8 max-w-lg">
