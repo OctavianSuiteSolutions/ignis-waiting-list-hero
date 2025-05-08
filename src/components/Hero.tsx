@@ -204,7 +204,7 @@ const Hero = () => {
               
               {/* Imagen principal con sombra y bordes redondeados */}
               <img 
-                src="/public/lovable-uploads/c7efbfc0-1d97-41cf-b185-7ba078aa763b.png"
+                src="/lovable-uploads/c7efbfc0-1d97-41cf-b185-7ba078aa763b.png"
                 alt="Bombero IGNIS" 
                 className="relative w-full h-auto max-h-[650px] object-contain z-10 drop-shadow-2xl"
               />
