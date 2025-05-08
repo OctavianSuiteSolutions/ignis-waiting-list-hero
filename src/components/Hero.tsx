@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
@@ -203,7 +204,7 @@ const Hero = () => {
               
               {/* Imagen principal con sombra y bordes redondeados */}
               <img 
-                src="/lovable-uploads/4fb12d0a-5d59-4d04-ae31-6cfaa0cf9de4.png"
+                src="/public/lovable-uploads/c7efbfc0-1d97-41cf-b185-7ba078aa763b.png"
                 alt="Bombero IGNIS" 
                 className="relative w-full h-auto max-h-[650px] object-contain z-10 drop-shadow-2xl"
               />
